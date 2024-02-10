@@ -33,7 +33,7 @@ function App() {
       })
   }, [])
 
-  if (!loading) {
+  if (loading) {
     return <FullScreenMessage type="loading" />
   }
 
