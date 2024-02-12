@@ -1,7 +1,8 @@
-import classNames from 'classnames/bind'
+import { memo } from 'react'
 import { format, parseISO } from 'date-fns'
 import { ko } from 'date-fns/locale'
 import Section from '../shared/Section'
+import classNames from 'classnames/bind'
 import { DayPicker } from 'react-day-picker'
 
 import 'react-day-picker/dist/style.css'
@@ -62,4 +63,4 @@ function Calendar({ date }: { date: string }) {
   )
 }
 
-export default Calendar
+export default memo(Calendar)
