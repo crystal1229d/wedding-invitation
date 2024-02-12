@@ -1,0 +1,16 @@
+.wrap-share {
+  display: flex;
+  justify-content: center;
+
+  button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+}
