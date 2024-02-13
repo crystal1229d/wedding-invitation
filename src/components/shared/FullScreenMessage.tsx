@@ -10,7 +10,14 @@ interface FullScreenMessageProps {
 function FullScreenMessage({ type }: FullScreenMessageProps) {
   return (
     <div className={cx('container')}>
-      {type === 'loading' ? <Heart /> : <Error />}
+      {type === 'loading' ? (
+        <Heart />
+      ) : (
+        <>
+          <Error />
+          에러가 발생했어요 잠시후 다시 시도해주세요
+        </>
+      )}
     </div>
   )
 }
